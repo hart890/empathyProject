@@ -1,0 +1,14 @@
+body {
+    background-color: yellow;
+}
+
+h1 {
+    text-align: center;
+    font-family: helvetica neue;
+}
+
+p {
+	text-align: center;
+    font-family: helvetica neue;
+    font-size: 20px;
+}
