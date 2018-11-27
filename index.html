@@ -12,6 +12,43 @@
 	<link rel="stylesheet" type="text/css" href="fullPage.js-master/dist/fullpage.css" />
 	<link rel="stylesheet" type="text/css" href="fullPage.js-master/examples/examples.css" />
 
+	<style>
+	.flex-container {
+	  display: flex;
+	  flex-direction: row;
+	  background-color: none;
+	  justify-content: center;
+	}
+
+	.flex-container > div {
+	  background-color: #000;
+	  width: 200px;
+	  margin: 10px;
+	  text-align: center;
+	  line-height: 75px;
+	  font-size: 20px;
+	  color: white;
+	}
+
+	.about-container {
+	  display: flex;
+	  flex-direction: row;
+	  background-color: none;
+	  justify-content: center;
+	}
+
+	.about-container > div {
+	  background-color: none;
+	  width: 90%;
+	  height: 300px;
+	  margin: 10px;
+	  text-align: center;
+	  line-height: 75px;
+	  font-size: 20px;
+	  color: white;
+	}
+	</style>
+
 </head>
 <body>
 
@@ -19,13 +56,13 @@
 <ul id="menu">
 	<li data-menuanchor="home" class="active"><a href="#firstPage">Home</a></li>
 	<li data-menuanchor="about"><a href="#secondPage">About</a></li>
-	<li data-menuanchor="share"><a href="#3rdPage">Share</a></li>
+	<li data-menuanchor="diagram"><a href="#3rdPage">Diagram</a></li>
+	<li data-menuanchor="share"><a href="#4thpage">Share</a></li>
 </ul>
 
 <div id="fullpage">
 	<div class="section " id="section0">
 		<h1>The Empathy Project</h1>
-		<br>
 		<br>
 		<br>
 		<br>
@@ -38,10 +75,47 @@
 	<div class="section" id="section1">
 		<div class="intro">
 			<h1>About</h1>
-			<p>diagram + photos</p>
+			<br>
+			<br>
+			<br>
+			<div class="about-container">
+			  <div>
+			  	<img src="IMG_2201.jpg" style="transform:rotate(90deg);" width=40%>
+			  	<img src="IMG_4974.jpg" style="transform:rotate(90deg);" width=40%>
+			  </div>
+			  <div>
+			  	<p>hello this is my about page</p>
+			  </div>
+			</div>
 		</div>
 	</div>
 	<div class="section" id="section2">
+		<div class="intro">
+			<h1>Diagram</h1>
+			<br>
+			<br>
+			<br>
+			<p>Before Intervention:</p>
+			<div class="flex-container">
+			  <div>You</div>
+			  <div>-></div>
+			  <div>ISOLATION</div>
+			  <div><-</div>
+			  <div>Others</div>
+			</div>
+			<br>
+			<br>
+			<p>After Intervention:</p>
+			<div class="flex-container">
+			  <div>You</div>
+			  <div>-></div>
+			  <div>Facilitated<br>Interactions</div>
+			  <div><-</div>
+			  <div>Others</div>
+			</div>
+		</div>
+	</div>
+	<div class="section" id="section3">
 		<div class="intro">
 			<h1>Share Your Thoughts</h1>
 			<br>
@@ -60,7 +134,7 @@
 
 <script type="text/javascript">
     var myFullpage = new fullpage('#fullpage', {
-      sectionsColor: ['#ffff00', '#ffff00', '#ffff00', 'whitesmoke', '#ccddff'],
+      sectionsColor: ['#ffff00', '#ffff00', '#ffff00', '#ffff00', '#ccddff'],
       anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
       menu: '#menu',
       continuousVertical: false,
