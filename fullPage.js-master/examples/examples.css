@@ -1,12 +1,24 @@
 @CHARSET "ISO-8859-1";
 /* Reset CSS
  * --------------------------------------- */
+
+ button {
+ 	background-color: #000;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+ }
+
 body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,
 form,fieldset,input,textarea,p,blockquote,th,td {
     padding: 0;
     margin: 0;
     color:#000;
-    font-size: 90%;
+    font-size: 95%;
 }
 a{
 	text-decoration:none;

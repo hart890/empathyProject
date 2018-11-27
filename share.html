@@ -1,14 +1,70 @@
 <!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<title>Empathy Project</title>
-	<link rel="stylesheet" type="text/css" href="index.css">
+	<meta name="author" content="Matthew Howell" />
+	<meta name="description" content="fullPage continuous scrolling demo." />
+	<meta name="keywords"  content="fullpage,jquery,demo,scroll,loop,continuous" />
+	<meta name="Resource-type" content="Document" />
+
+	<link rel="stylesheet" type="text/css" href="fullPage.js-master/dist/fullpage.css" />
+	<link rel="stylesheet" type="text/css" href="fullPage.js-master/examples/examples.css" />
+
+	<style>
+		p {
+			font-size: 120%;
+		}
+	</style>
+
+
 </head>
-
 <body>
-<h1>SHARE</h1>
-<p>comment section here</p>
-</body>
 
+
+<ul id="menu">
+	<li data-menuanchor="home" class="active"><a href="index.html">Back to Home</a></li>
+	<!-- <li data-menuanchor="about"><a href="#secondPage">About</a></li>
+	<li data-menuanchor="share"><a href="#3rdPage">Share</a></li> -->
+</ul>
+
+<div id="fullpage">
+	<div class="section " id="section0">
+		<h1>Share Your Thoughts</h1>
+		<br>
+		<br>
+		<p>Did you have a wholesome experience after following through<br> with a given suggestion? Did you have a cringey one and want to vent about it?<br>
+		Want to tell me how much this campaign bothered you? Let me know here:</p>
+	</div>
+	<!-- <div class="section" id="section1">
+		<div class="intro">
+			<h1>About</h1>
+			<p>diagram + photos</p>
+		</div>
+	</div> -->
+</div>
+
+
+<script type="text/javascript" src="fullPage.js-master/dist/fullpage.js"></script>
+<script type="text/javascript" src="fullPage.js-master/examples/examples.js"></script>
+
+<script type="text/javascript">
+    var myFullpage = new fullpage('#fullpage', {
+      sectionsColor: ['#ffff00', '#ffff00', '#ffff00', 'whitesmoke', '#ccddff'],
+      anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
+      menu: '#menu',
+      continuousVertical: false,
+      afterLoad: function(anchorLink, index){
+            console.log("AFTER LOAD - anchorLink:" +anchorLink + " index:" +index );
+        },
+        onLeave: function(index, nextIndex, direction){
+            console.log("ONLEAVE - index:" +index + " nextIndex:" +nextIndex  + " direction:" + direction);
+
+        },
+    });
+</script>
+
+</body>
 </html>
+
