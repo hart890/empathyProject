@@ -5,7 +5,7 @@
  button {
  	background-color: #000;
     border: none;
-    color: white;
+    color: #000000;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
@@ -92,7 +92,7 @@ p{
 	display:inline-block;
 	margin: 10px;
 	color: #000;
-	background:#fff;
+	background:#000;
 	background: rgba(255,255,255, 0.5);
 	-webkit-border-radius: 10px;
             border-radius: 10px;
@@ -100,11 +100,11 @@ p{
 #menu li.active{
 	background:#666;
 	background: rgba(0,0,0, 0.5);
-	color: #fff;
+	color: #000;
 }
 #menu li a{
 	text-decoration:none;
-	color: #000;
+	color:#000;
 }
 #menu li.active a:hover{
 	color: #000;
@@ -118,7 +118,7 @@ p{
 	display:block;
 }
 #menu li.active a{
-	color: #fff;
+	color: #000;
 }
 #menu{
 	position:fixed;
@@ -166,11 +166,11 @@ p{
 }
 #download a{
 	text-decoration:none;
-	color:#fff;
+	color:#000;
 }
 #download:hover{
 	text-shadow: 0 -1px 0 rgba(0,0,0,.25);
-	background-color: #2F96B4;
+	background-color: #000;
 	background-position: 0 -15px;
 	-webkit-transition: background-position .1s linear;
 	-moz-transition: background-position .1s linear;
@@ -180,7 +180,7 @@ p{
 }
 #infoMenu{
 	height: 20px;
-	color: #f2f2f2;
+	color: #000;
 	position:fixed;
 	z-index:70;
 	bottom:0;
@@ -195,7 +195,7 @@ p{
 #infoMenu li a{
 	display: block;
 	margin: 0 22px 0 0;
-	color: #333;
+	color: #000;
 }
 #infoMenu li a:hover{
 	text-decoration:underline;
@@ -230,7 +230,7 @@ p{
 	margin:0;
 }
 #examplesList ul li a:hover{
-	color: #f2f2f2;
+	color: #000;
 }
 #examplesList .column{
 	float: left;
