@@ -9,9 +9,8 @@
 	.st3{font-family:'CircularStd-Bold';}
 	.st4{font-size:50.4px;}
 </style>
-<title>up</title>
-<path class="st0" d="M275,161.1L275,161.1z"/>
-<polyline class="st1" points="314,190.3 275,161.1 236,190.3 "/>
-<path class="st0" d="M275,174.1v227.8V174.1z"/>
-<text transform="matrix(1 0 0 1 158.8802 457.3892)" class="st2"><tspan x="0" y="0" class="st3 st4">decide to </tspan><tspan x="79.3" y="60.5" class="st3 st4">act</tspan></text>
+<path class="st0" d="M391.5,386.4H128.3H391.5z"/>
+<path class="st0" d="M381.5,158.6v227.8V158.6z"/>
+<polyline class="st1" points="420.5,187.8 381.5,158.6 342.5,187.8 "/>
+<text transform="matrix(1 0 0 1 144.1637 444.8676)" class="st2"><tspan x="0" y="0" class="st3 st4">decide not </tspan><tspan x="63.7" y="60.5" class="st3 st4">to act</tspan></text>
 </svg>
