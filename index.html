@@ -48,38 +48,34 @@
 	  color: white;
 	}
 	</style>
-
 </head>
+
 <body>
+	<ul id="menu">
+		<li data-menuanchor="home" class="active"><a href="#firstPage">Home</a></li>
+		<li data-menuanchor="about"><a href="#secondPage">About</a></li>
+		<li data-menuanchor="inspiration"><a href="#3rdPage">Inspiration</a></li>
+		<li data-menuanchor="diagram"><a href="#4thpage">Diagram</a></li>
+		<li data-menuanchor="poster"><a href="#5thpage">Poster</a></li>
+		<li data-menuanchor="documentation"><a href="#lastPage">Documentation</a></li>
+	</ul>
 
-
-<ul id="menu">
-	<li data-menuanchor="home" class="active"><a href="#firstPage">Home</a></li>
-	<li data-menuanchor="about"><a href="#secondPage">About</a></li>
-	<!-- <li data-menuanchor="documentation"><a href="#3rdPage">Documentation</a></li> -->
-	<!-- <li data-menuanchor="share"><a href="#4thpage">Share</a></li> -->
-</ul>
-
-<div id="fullpage">
-	<div class="section " id="section0">
+	<div id="fullpage">
+		<div class="section" id="section0">
 		<img src="font.svg" height=20%>
 		<br>
 		<br>
-		<img src="smile2.png" height=23%>
+		<br>
+		<img src="smile2.png" height=30%>
 		<br>
 		<br>
 		<br>
 		<br>
-		<br>
-		<br>
-		<br>
-		<img src="arrow.png" height=5%>
-	</div>
+		<img src="arrow.png" height=10%>
+		</div>
 
-	<div class="section" id="section1">
-	    <div class="slide" id="slide1" data-anchor="slide1">
-			<div class="intro">
-				<img src="artist.svg" width=50%>
+		<div class="section" id="section1">
+			<img src="about.svg" width=50%>
 				<br>
 				<br>
 				<br>
@@ -89,18 +85,16 @@
 				<br>
 				<p><b>AIM:</b> To change the isolating way we
 				treat others (specifically on Northeastern’s campus) for the better.</p>
-
-			</div>
 		</div>
 
-	    <div class="slide" id="slide2" data-anchor="slide2">
-			<img src="about.svg" width=40%>
+		<div class="section" id="section2">
+			<img src="artist.svg" width=40%>
 			<br>
-			<img src="lacy.svg" width=40%>
-			<img src="magid.svg" width=40%>
+			<br>
+			<img src="artistsImg.png" width=90%>
 		</div>
 
-		<div class="slide" id="slide3" data-anchor="slide3">
+		<div class="section" id="section3">
 			<img src="diagram.svg" width=20%>
 			<br>
 			<div class="flex-container">
@@ -133,19 +127,13 @@
   				<div></div>
   				<div></div>
 			</div>
-			<!-- <div class="flex-container">
-  				<div></div>
-  				<div></div>
-  				<div></div>
-  				<div></div>
-			</div> -->
-		</div>	
+		</div>
 
-		<div class="slide" id="slide3" data-anchor="slide3">
+		<div class="section" id="section4">
 			<p>poster page</p>
 		</div>
 
-		<div class="slide" id="slide4" data-anchor="slide4">
+		<div class="section" id="section5">
 			<img src="documentation.svg" width=40%>
 			<br>
 			<!-- Slideshow container -->
@@ -257,16 +245,14 @@
 			<h2>(Click through dots to see intervention)</h2>
 		</div>
 	</div>
-</div>
 
+	<script type="text/javascript" src="fullPage.js-master/dist/fullpage.js"></script>
+	<script type="text/javascript" src="fullPage.js-master/examples/examples.js"></script>
 
-<script type="text/javascript" src="fullPage.js-master/dist/fullpage.js"></script>
-<script type="text/javascript" src="fullPage.js-master/examples/examples.js"></script>
-
-<script type="text/javascript">
+	<script type="text/javascript">
     var myFullpage = new fullpage('#fullpage', {
-      sectionsColor: ['#ffff00', '#ffff00', '#ffff00', '#ffff00', '#ccddff'],
-      anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
+      sectionsColor: ['#fcfc5a', '#fcfc5a', '#fcfc5a', '#fcfc5a', '#fcfc5a', '#fcfc5a'],
+      anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', '5thpage', 'lastPage'],
       menu: '#menu',
       continuousVertical: false,
       afterLoad: function(anchorLink, index){
@@ -277,7 +263,7 @@
 
         },
     });
-</script>
-
+	</script>
 </body>
+
 </html>
