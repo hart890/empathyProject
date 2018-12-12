@@ -22,10 +22,10 @@
 
 	.flex-container > div {
 	  background: none;
-	  width: 100px;
-	  margin: 10px;
+	  width: 130px;
+	  margin: 3px;
 	  text-align: center;
-	  line-height: 75px;
+	  line-height: 60px;
 	  font-size: 20px;
 	  color: black;
 	}
@@ -39,11 +39,11 @@
 
 	.about-container > div {
 	  background-color: #bbb;
-	  width: 90%;
-	  height: 300px;
-	  margin: 10px;
+	  width: 80%;
+	  height: 200px;
+	  margin: 5px;
 	  text-align: center;
-	  line-height: 75px;
+	  line-height: 70px;
 	  font-size: 20px;
 	  color: white;
 	}
@@ -55,9 +55,10 @@
 		<li data-menuanchor="home" class="active"><a href="#firstPage">Home</a></li>
 		<li data-menuanchor="about"><a href="#secondPage">About</a></li>
 		<li data-menuanchor="inspiration"><a href="#3rdPage">Inspiration</a></li>
-		<li data-menuanchor="diagram"><a href="#4thpage">Diagram</a></li>
-		<li data-menuanchor="poster"><a href="#5thpage">Poster</a></li>
-		<li data-menuanchor="setup"><a href="#6thpage">Setup</a></li>
+		<li data-menuanchor="diagram"><a href="#4thpage">Diagram 1</a></li>
+		<li data-menuanchor="setup"><a href="#5thpage">Diagram 2</a></li>
+		<li data-menuanchor="poster"><a href="#6thpage">Poster</a></li>
+		<li data-menuanchor="setup"><a href="#7thpage">Setup</a></li>
 		<li data-menuanchor="results"><a href="#lastPage">Results</a></li>
 	</ul>
 
@@ -77,15 +78,10 @@
 
 		<div class="section" id="section1">
 			<img src="about.svg" width=50%>
-				<!-- <br>
 				<br>
 				<br>
 				<br>
-				<p><b>SYSTEM:</b> Intervene with an individual's daily interactions with others.</p>
-				<br>
-				<br>
-				<p><b>AIM:</b> To change the isolating way we
-				treat others (specifically on Northeastern’s campus) for the better.</p> -->
+				<img src="introP.svg" width=55%>
 		</div>
 
 		<div class="section" id="section2">
@@ -97,13 +93,6 @@
 
 		<div class="section" id="section3">
 			<img src="diagram.svg" width=20%>
-			<br>
-			<!-- <div class="flex-container">
-  				<div></div>
-  				<div></div>
-  				<div></div>
-  				<div></div>
-			</div>
 			<div class="flex-container">
   				<div><img src="diagram/without.svg" width=95%></div>
   				<div><img src="diagram/leftArrow.svg" width=95%></div>
@@ -122,19 +111,18 @@
   				<div><img src="diagram/notass-01.svg" width=80%></div>
   				<div><img src="diagram/upbent-01.svg" width=95%></div>
 			</div>
-			<div class="flex-container">
-  				<div></div>
-  				<div></div>
-  				<div></div>
-  				<div></div>
-			</div> -->
 		</div>
 
 		<div class="section" id="section4">
-			<img src="poster.svg" width=18%>
+			<img src="diagram.svg" width=20%>
+			<br>
+		</div>
+
+		<div class="section" id="section5">
+			<img src="poster.svg" width=15%>
 			<br>
 			<br>
-			<img src="tabFlyer.svg" width=50%>
+			<img src="tabFlyer.svg" width=45%>
 		</div>
 
 		<div class="section" id="section6">
@@ -148,7 +136,7 @@
 			<img src="results.svg" width=18%>
 			<br>
 			<br>
-			<img src="resultsImg-01.svg" width=70%>
+			<img src="resultsImg-01.svg" width=65%>
 		</div>
 	</div>
 
@@ -157,8 +145,8 @@
 
 	<script type="text/javascript">
     var myFullpage = new fullpage('#fullpage', {
-      sectionsColor: ['#fcfc5a', '#fcfc5a', '#fcfc5a', '#fcfc5a', '#fcfc5a', '#fcfc5a', '#fcfc5a'],
-      anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', '5thpage', '6thpage','lastPage'],
+      sectionsColor: ['#fcfc5a', '#fcfc5a', '#fcfc5a', '#fcfc5a', '#fcfc5a', '#fcfc5a', '#fcfc5a', '#fcfc5a'],
+      anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', '5thpage', '6thpage', '7thpage', 'lastPage'],
       menu: '#menu',
       continuousVertical: false,
       afterLoad: function(anchorLink, index){
